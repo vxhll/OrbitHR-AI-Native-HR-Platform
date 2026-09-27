@@ -1,0 +1,501 @@
+employee_id,employment_status,exit_date,exit_type,exit_reason,notice_period_days,rehire_eligible,attrited_within_180_days_label
+EMP0001,Active,,,,,,0
+EMP0002,Active,,,,,,0
+EMP0003,Active,,,,,,0
+EMP0004,Active,,,,,,0
+EMP0005,Active,,,,,,0
+EMP0006,Active,,,,,,0
+EMP0007,Active,,,,,,0
+EMP0008,Active,,,,,,0
+EMP0009,Active,,,,,,0
+EMP0010,Active,,,,,,0
+EMP0011,Active,,,,,,0
+EMP0012,Active,,,,,,0
+EMP0013,Active,,,,,,0
+EMP0014,Active,,,,,,0
+EMP0015,Exited,2026-06-11,Voluntary,Relocation,60,Yes,1
+EMP0016,Active,,,,,,0
+EMP0017,Active,,,,,,0
+EMP0018,Active,,,,,,0
+EMP0019,Active,,,,,,0
+EMP0020,Active,,,,,,0
+EMP0021,Active,,,,,,0
+EMP0022,Active,,,,,,0
+EMP0023,Active,,,,,,0
+EMP0024,Active,,,,,,0
+EMP0025,Exited,2026-06-08,Voluntary,Higher education,15,Yes,1
+EMP0026,Active,,,,,,0
+EMP0027,Active,,,,,,0
+EMP0028,Active,,,,,,0
+EMP0029,Active,,,,,,0
+EMP0030,Active,,,,,,0
+EMP0031,Active,,,,,,0
+EMP0032,Active,,,,,,0
+EMP0033,Exited,2026-04-24,Voluntary,Higher education,15,Yes,1
+EMP0034,Active,,,,,,0
+EMP0035,Active,,,,,,0
+EMP0036,Active,,,,,,0
+EMP0037,Active,,,,,,0
+EMP0038,Active,,,,,,0
+EMP0039,Exited,2026-06-20,Involuntary,Restructuring,7,Yes,1
+EMP0040,Active,,,,,,0
+EMP0041,Active,,,,,,0
+EMP0042,Exited,2026-05-19,Voluntary,Work-life balance,60,Yes,1
+EMP0043,Active,,,,,,0
+EMP0044,Exited,2026-02-13,Voluntary,Higher education,30,Yes,1
+EMP0045,Exited,2026-05-29,Voluntary,Better compensation elsewhere,15,Yes,1
+EMP0046,Exited,2026-06-27,Voluntary,Better role fit,15,Yes,1
+EMP0047,Active,,,,,,0
+EMP0048,Active,,,,,,0
+EMP0049,Active,,,,,,0
+EMP0050,Active,,,,,,0
+EMP0051,Active,,,,,,0
+EMP0052,Active,,,,,,0
+EMP0053,Active,,,,,,0
+EMP0054,Exited,2026-06-01,Voluntary,Career growth opportunity,45,Yes,1
+EMP0055,Active,,,,,,0
+EMP0056,Active,,,,,,0
+EMP0057,Active,,,,,,0
+EMP0058,Active,,,,,,0
+EMP0059,Exited,2026-03-02,Involuntary,Performance-based separation,15,Yes,1
+EMP0060,Exited,2026-05-24,Involuntary,Role redundancy,0,Yes,1
+EMP0061,Active,,,,,,0
+EMP0062,Active,,,,,,0
+EMP0063,Exited,2026-05-25,Voluntary,Career growth opportunity,0,Yes,1
+EMP0064,Active,,,,,,0
+EMP0065,Active,,,,,,0
+EMP0066,Active,,,,,,0
+EMP0067,Active,,,,,,0
+EMP0068,Active,,,,,,0
+EMP0069,Active,,,,,,0
+EMP0070,Exited,2026-03-29,Voluntary,Relocation,15,Yes,1
+EMP0071,Active,,,,,,0
+EMP0072,Active,,,,,,0
+EMP0073,Active,,,,,,0
+EMP0074,Exited,2026-01-31,Involuntary,Restructuring,0,No,1
+EMP0075,Active,,,,,,0
+EMP0076,Active,,,,,,0
+EMP0077,Active,,,,,,0
+EMP0078,Active,,,,,,0
+EMP0079,Active,,,,,,0
+EMP0080,Active,,,,,,0
+EMP0081,Active,,,,,,0
+EMP0082,Active,,,,,,0
+EMP0083,Active,,,,,,0
+EMP0084,Active,,,,,,0
+EMP0085,Active,,,,,,0
+EMP0086,Active,,,,,,0
+EMP0087,Active,,,,,,0
+EMP0088,Active,,,,,,0
+EMP0089,Active,,,,,,0
+EMP0090,Active,,,,,,0
+EMP0091,Active,,,,,,0
+EMP0092,Active,,,,,,0
+EMP0093,Active,,,,,,0
+EMP0094,Active,,,,,,0
+EMP0095,Active,,,,,,0
+EMP0096,Active,,,,,,0
+EMP0097,Active,,,,,,0
+EMP0098,Exited,2026-04-30,Voluntary,Higher education,45,Yes,1
+EMP0099,Active,,,,,,0
+EMP0100,Exited,2026-02-01,Voluntary,Better compensation elsewhere,30,Yes,1
+EMP0101,Exited,2026-02-16,Involuntary,Restructuring,15,No,1
+EMP0102,Active,,,,,,0
+EMP0103,Active,,,,,,0
+EMP0104,Active,,,,,,0
+EMP0105,Active,,,,,,0
+EMP0106,Active,,,,,,0
+EMP0107,Exited,2026-03-29,Voluntary,Work-life balance,60,Yes,1
+EMP0108,Active,,,,,,0
+EMP0109,Active,,,,,,0
+EMP0110,Active,,,,,,0
+EMP0111,Active,,,,,,0
+EMP0112,Active,,,,,,0
+EMP0113,Exited,2026-06-15,Voluntary,Career growth opportunity,45,Yes,1
+EMP0114,Active,,,,,,0
+EMP0115,Active,,,,,,0
+EMP0116,Active,,,,,,0
+EMP0117,Active,,,,,,0
+EMP0118,Active,,,,,,0
+EMP0119,Active,,,,,,0
+EMP0120,Active,,,,,,0
+EMP0121,Active,,,,,,0
+EMP0122,Active,,,,,,0
+EMP0123,Active,,,,,,0
+EMP0124,Active,,,,,,0
+EMP0125,Active,,,,,,0
+EMP0126,Active,,,,,,0
+EMP0127,Active,,,,,,0
+EMP0128,Active,,,,,,0
+EMP0129,Exited,2026-04-27,Voluntary,Relocation,60,Yes,1
+EMP0130,Active,,,,,,0
+EMP0131,Active,,,,,,0
+EMP0132,Active,,,,,,0
+EMP0133,Active,,,,,,0
+EMP0134,Active,,,,,,0
+EMP0135,Active,,,,,,0
+EMP0136,Active,,,,,,0
+EMP0137,Exited,2026-02-09,Voluntary,Work-life balance,30,Yes,1
+EMP0138,Active,,,,,,0
+EMP0139,Active,,,,,,0
+EMP0140,Active,,,,,,0
+EMP0141,Active,,,,,,0
+EMP0142,Active,,,,,,0
+EMP0143,Exited,2026-04-27,Voluntary,Career growth opportunity,60,Yes,1
+EMP0144,Active,,,,,,0
+EMP0145,Active,,,,,,0
+EMP0146,Active,,,,,,0
+EMP0147,Active,,,,,,0
+EMP0148,Exited,2026-05-04,Voluntary,Relocation,30,Yes,1
+EMP0149,Active,,,,,,0
+EMP0150,Active,,,,,,0
+EMP0151,Active,,,,,,0
+EMP0152,Active,,,,,,0
+EMP0153,Active,,,,,,0
+EMP0154,Active,,,,,,0
+EMP0155,Active,,,,,,0
+EMP0156,Active,,,,,,0
+EMP0157,Exited,2026-05-25,Voluntary,Health / personal reasons,45,Yes,1
+EMP0158,Exited,2026-06-24,Voluntary,Better compensation elsewhere,60,Yes,1
+EMP0159,Active,,,,,,0
+EMP0160,Active,,,,,,0
+EMP0161,Active,,,,,,0
+EMP0162,Active,,,,,,0
+EMP0163,Active,,,,,,0
+EMP0164,Active,,,,,,0
+EMP0165,Active,,,,,,0
+EMP0166,Active,,,,,,0
+EMP0167,Active,,,,,,0
+EMP0168,Active,,,,,,0
+EMP0169,Active,,,,,,0
+EMP0170,Exited,2026-02-25,Voluntary,Higher education,15,Yes,1
+EMP0171,Active,,,,,,0
+EMP0172,Active,,,,,,0
+EMP0173,Active,,,,,,0
+EMP0174,Active,,,,,,0
+EMP0175,Exited,2026-03-20,Voluntary,Better compensation elsewhere,60,Yes,1
+EMP0176,Active,,,,,,0
+EMP0177,Active,,,,,,0
+EMP0178,Active,,,,,,0
+EMP0179,Active,,,,,,0
+EMP0180,Active,,,,,,0
+EMP0181,Active,,,,,,0
+EMP0182,Active,,,,,,0
+EMP0183,Active,,,,,,0
+EMP0184,Active,,,,,,0
+EMP0185,Exited,2026-04-02,Voluntary,Career growth opportunity,15,Yes,1
+EMP0186,Active,,,,,,0
+EMP0187,Active,,,,,,0
+EMP0188,Exited,2026-03-09,Voluntary,Career growth opportunity,30,Yes,1
+EMP0189,Active,,,,,,0
+EMP0190,Active,,,,,,0
+EMP0191,Active,,,,,,0
+EMP0192,Active,,,,,,0
+EMP0193,Active,,,,,,0
+EMP0194,Exited,2026-06-24,Involuntary,Restructuring,0,Yes,1
+EMP0195,Active,,,,,,0
+EMP0196,Active,,,,,,0
+EMP0197,Active,,,,,,0
+EMP0198,Active,,,,,,0
+EMP0199,Active,,,,,,0
+EMP0200,Active,,,,,,0
+EMP0201,Active,,,,,,0
+EMP0202,Active,,,,,,0
+EMP0203,Active,,,,,,0
+EMP0204,Active,,,,,,0
+EMP0205,Active,,,,,,0
+EMP0206,Active,,,,,,0
+EMP0207,Active,,,,,,0
+EMP0208,Active,,,,,,0
+EMP0209,Active,,,,,,0
+EMP0210,Active,,,,,,0
+EMP0211,Active,,,,,,0
+EMP0212,Active,,,,,,0
+EMP0213,Active,,,,,,0
+EMP0214,Active,,,,,,0
+EMP0215,Active,,,,,,0
+EMP0216,Active,,,,,,0
+EMP0217,Exited,2026-05-07,Voluntary,Health / personal reasons,30,Yes,1
+EMP0218,Active,,,,,,0
+EMP0219,Active,,,,,,0
+EMP0220,Active,,,,,,0
+EMP0221,Active,,,,,,0
+EMP0222,Active,,,,,,0
+EMP0223,Active,,,,,,0
+EMP0224,Active,,,,,,0
+EMP0225,Active,,,,,,0
+EMP0226,Active,,,,,,0
+EMP0227,Active,,,,,,0
+EMP0228,Active,,,,,,0
+EMP0229,Active,,,,,,0
+EMP0230,Active,,,,,,0
+EMP0231,Active,,,,,,0
+EMP0232,Active,,,,,,0
+EMP0233,Exited,2026-02-19,Involuntary,Role redundancy,15,No,1
+EMP0234,Active,,,,,,0
+EMP0235,Active,,,,,,0
+EMP0236,Active,,,,,,0
+EMP0237,Active,,,,,,0
+EMP0238,Active,,,,,,0
+EMP0239,Exited,2026-05-23,Voluntary,Career growth opportunity,60,Yes,1
+EMP0240,Active,,,,,,0
+EMP0241,Active,,,,,,0
+EMP0242,Active,,,,,,0
+EMP0243,Active,,,,,,0
+EMP0244,Active,,,,,,0
+EMP0245,Active,,,,,,0
+EMP0246,Exited,2026-03-03,Voluntary,Better role fit,45,Yes,1
+EMP0247,Active,,,,,,0
+EMP0248,Active,,,,,,0
+EMP0249,Active,,,,,,0
+EMP0250,Exited,2026-01-26,Voluntary,Career growth opportunity,0,Yes,1
+EMP0251,Active,,,,,,0
+EMP0252,Exited,2026-02-22,Involuntary,Restructuring,15,Yes,1
+EMP0253,Active,,,,,,0
+EMP0254,Active,,,,,,0
+EMP0255,Active,,,,,,0
+EMP0256,Active,,,,,,0
+EMP0257,Active,,,,,,0
+EMP0258,Active,,,,,,0
+EMP0259,Active,,,,,,0
+EMP0260,Active,,,,,,0
+EMP0261,Active,,,,,,0
+EMP0262,Active,,,,,,0
+EMP0263,Active,,,,,,0
+EMP0264,Active,,,,,,0
+EMP0265,Active,,,,,,0
+EMP0266,Active,,,,,,0
+EMP0267,Active,,,,,,0
+EMP0268,Active,,,,,,0
+EMP0269,Active,,,,,,0
+EMP0270,Exited,2026-02-24,Voluntary,Better role fit,60,Yes,1
+EMP0271,Active,,,,,,0
+EMP0272,Active,,,,,,0
+EMP0273,Active,,,,,,0
+EMP0274,Exited,2026-01-31,Voluntary,Work-life balance,15,Yes,1
+EMP0275,Active,,,,,,0
+EMP0276,Active,,,,,,0
+EMP0277,Active,,,,,,0
+EMP0278,Exited,2026-02-04,Voluntary,Career growth opportunity,30,Yes,1
+EMP0279,Active,,,,,,0
+EMP0280,Active,,,,,,0
+EMP0281,Active,,,,,,0
+EMP0282,Active,,,,,,0
+EMP0283,Active,,,,,,0
+EMP0284,Active,,,,,,0
+EMP0285,Active,,,,,,0
+EMP0286,Active,,,,,,0
+EMP0287,Active,,,,,,0
+EMP0288,Active,,,,,,0
+EMP0289,Exited,2026-03-08,Voluntary,Work-life balance,45,Yes,1
+EMP0290,Exited,2026-06-23,Voluntary,Work-life balance,0,Yes,1
+EMP0291,Active,,,,,,0
+EMP0292,Active,,,,,,0
+EMP0293,Active,,,,,,0
+EMP0294,Active,,,,,,0
+EMP0295,Active,,,,,,0
+EMP0296,Exited,2026-04-03,Involuntary,Performance-based separation,0,No,1
+EMP0297,Active,,,,,,0
+EMP0298,Active,,,,,,0
+EMP0299,Active,,,,,,0
+EMP0300,Exited,2026-06-25,Voluntary,Higher education,45,Yes,1
+EMP0301,Active,,,,,,0
+EMP0302,Active,,,,,,0
+EMP0303,Active,,,,,,0
+EMP0304,Active,,,,,,0
+EMP0305,Active,,,,,,0
+EMP0306,Active,,,,,,0
+EMP0307,Active,,,,,,0
+EMP0308,Active,,,,,,0
+EMP0309,Exited,2026-03-05,Voluntary,Career growth opportunity,45,Yes,1
+EMP0310,Active,,,,,,0
+EMP0311,Active,,,,,,0
+EMP0312,Active,,,,,,0
+EMP0313,Active,,,,,,0
+EMP0314,Active,,,,,,0
+EMP0315,Active,,,,,,0
+EMP0316,Active,,,,,,0
+EMP0317,Active,,,,,,0
+EMP0318,Active,,,,,,0
+EMP0319,Exited,2026-06-23,Voluntary,Career growth opportunity,60,Yes,1
+EMP0320,Active,,,,,,0
+EMP0321,Active,,,,,,0
+EMP0322,Active,,,,,,0
+EMP0323,Active,,,,,,0
+EMP0324,Active,,,,,,0
+EMP0325,Active,,,,,,0
+EMP0326,Active,,,,,,0
+EMP0327,Active,,,,,,0
+EMP0328,Active,,,,,,0
+EMP0329,Active,,,,,,0
+EMP0330,Active,,,,,,0
+EMP0331,Active,,,,,,0
+EMP0332,Active,,,,,,0
+EMP0333,Exited,2026-03-08,Voluntary,Work-life balance,60,Yes,1
+EMP0334,Exited,2026-03-29,Voluntary,Career growth opportunity,30,Yes,1
+EMP0335,Active,,,,,,0
+EMP0336,Active,,,,,,0
+EMP0337,Active,,,,,,0
+EMP0338,Active,,,,,,0
+EMP0339,Active,,,,,,0
+EMP0340,Exited,2026-05-17,Voluntary,Work-life balance,60,Yes,1
+EMP0341,Active,,,,,,0
+EMP0342,Active,,,,,,0
+EMP0343,Active,,,,,,0
+EMP0344,Active,,,,,,0
+EMP0345,Active,,,,,,0
+EMP0346,Exited,2026-02-07,Voluntary,Career growth opportunity,45,Yes,1
+EMP0347,Exited,2026-04-29,Involuntary,Performance-based separation,0,Yes,1
+EMP0348,Active,,,,,,0
+EMP0349,Active,,,,,,0
+EMP0350,Active,,,,,,0
+EMP0351,Active,,,,,,0
+EMP0352,Active,,,,,,0
+EMP0353,Active,,,,,,0
+EMP0354,Active,,,,,,0
+EMP0355,Active,,,,,,0
+EMP0356,Active,,,,,,0
+EMP0357,Exited,2026-03-13,Voluntary,Work-life balance,60,Yes,1
+EMP0358,Active,,,,,,0
+EMP0359,Exited,2026-05-08,Voluntary,Health / personal reasons,15,Yes,1
+EMP0360,Exited,2026-06-25,Voluntary,Better compensation elsewhere,15,Yes,1
+EMP0361,Active,,,,,,0
+EMP0362,Exited,2026-05-22,Involuntary,Restructuring,15,Yes,1
+EMP0363,Active,,,,,,0
+EMP0364,Active,,,,,,0
+EMP0365,Active,,,,,,0
+EMP0366,Active,,,,,,0
+EMP0367,Active,,,,,,0
+EMP0368,Active,,,,,,0
+EMP0369,Active,,,,,,0
+EMP0370,Active,,,,,,0
+EMP0371,Active,,,,,,0
+EMP0372,Exited,2026-06-06,Voluntary,Work-life balance,0,Yes,1
+EMP0373,Active,,,,,,0
+EMP0374,Exited,2026-02-13,Voluntary,Higher education,15,Yes,1
+EMP0375,Active,,,,,,0
+EMP0376,Active,,,,,,0
+EMP0377,Active,,,,,,0
+EMP0378,Active,,,,,,0
+EMP0379,Active,,,,,,0
+EMP0380,Active,,,,,,0
+EMP0381,Active,,,,,,0
+EMP0382,Active,,,,,,0
+EMP0383,Active,,,,,,0
+EMP0384,Active,,,,,,0
+EMP0385,Active,,,,,,0
+EMP0386,Active,,,,,,0
+EMP0387,Active,,,,,,0
+EMP0388,Active,,,,,,0
+EMP0389,Active,,,,,,0
+EMP0390,Active,,,,,,0
+EMP0391,Active,,,,,,0
+EMP0392,Exited,2026-06-24,Involuntary,Restructuring,0,No,1
+EMP0393,Active,,,,,,0
+EMP0394,Active,,,,,,0
+EMP0395,Exited,2026-06-03,Voluntary,Higher education,30,Yes,1
+EMP0396,Active,,,,,,0
+EMP0397,Active,,,,,,0
+EMP0398,Exited,2026-02-01,Voluntary,Better role fit,60,Yes,1
+EMP0399,Active,,,,,,0
+EMP0400,Active,,,,,,0
+EMP0401,Exited,2026-05-10,Voluntary,Career growth opportunity,45,Yes,1
+EMP0402,Active,,,,,,0
+EMP0403,Active,,,,,,0
+EMP0404,Active,,,,,,0
+EMP0405,Active,,,,,,0
+EMP0406,Active,,,,,,0
+EMP0407,Active,,,,,,0
+EMP0408,Active,,,,,,0
+EMP0409,Active,,,,,,0
+EMP0410,Active,,,,,,0
+EMP0411,Active,,,,,,0
+EMP0412,Active,,,,,,0
+EMP0413,Exited,2026-04-28,Involuntary,Role redundancy,15,Yes,1
+EMP0414,Active,,,,,,0
+EMP0415,Active,,,,,,0
+EMP0416,Active,,,,,,0
+EMP0417,Exited,2026-05-09,Voluntary,Career growth opportunity,30,Yes,1
+EMP0418,Active,,,,,,0
+EMP0419,Active,,,,,,0
+EMP0420,Active,,,,,,0
+EMP0421,Active,,,,,,0
+EMP0422,Active,,,,,,0
+EMP0423,Active,,,,,,0
+EMP0424,Active,,,,,,0
+EMP0425,Exited,2026-05-23,Voluntary,Health / personal reasons,15,Yes,1
+EMP0426,Active,,,,,,0
+EMP0427,Active,,,,,,0
+EMP0428,Active,,,,,,0
+EMP0429,Active,,,,,,0
+EMP0430,Exited,2026-02-11,Voluntary,Relocation,60,Yes,1
+EMP0431,Active,,,,,,0
+EMP0432,Active,,,,,,0
+EMP0433,Active,,,,,,0
+EMP0434,Active,,,,,,0
+EMP0435,Exited,2026-06-09,Voluntary,Higher education,30,Yes,1
+EMP0436,Active,,,,,,0
+EMP0437,Active,,,,,,0
+EMP0438,Active,,,,,,0
+EMP0439,Active,,,,,,0
+EMP0440,Active,,,,,,0
+EMP0441,Active,,,,,,0
+EMP0442,Active,,,,,,0
+EMP0443,Active,,,,,,0
+EMP0444,Active,,,,,,0
+EMP0445,Active,,,,,,0
+EMP0446,Active,,,,,,0
+EMP0447,Active,,,,,,0
+EMP0448,Active,,,,,,0
+EMP0449,Active,,,,,,0
+EMP0450,Active,,,,,,0
+EMP0451,Exited,2026-03-10,Voluntary,Better compensation elsewhere,0,Yes,1
+EMP0452,Active,,,,,,0
+EMP0453,Active,,,,,,0
+EMP0454,Active,,,,,,0
+EMP0455,Active,,,,,,0
+EMP0456,Active,,,,,,0
+EMP0457,Active,,,,,,0
+EMP0458,Active,,,,,,0
+EMP0459,Active,,,,,,0
+EMP0460,Exited,2026-06-17,Voluntary,Work-life balance,0,Yes,1
+EMP0461,Active,,,,,,0
+EMP0462,Active,,,,,,0
+EMP0463,Active,,,,,,0
+EMP0464,Active,,,,,,0
+EMP0465,Active,,,,,,0
+EMP0466,Active,,,,,,0
+EMP0467,Active,,,,,,0
+EMP0468,Active,,,,,,0
+EMP0469,Active,,,,,,0
+EMP0470,Active,,,,,,0
+EMP0471,Active,,,,,,0
+EMP0472,Active,,,,,,0
+EMP0473,Active,,,,,,0
+EMP0474,Active,,,,,,0
+EMP0475,Active,,,,,,0
+EMP0476,Active,,,,,,0
+EMP0477,Active,,,,,,0
+EMP0478,Active,,,,,,0
+EMP0479,Exited,2026-06-03,Voluntary,Better compensation elsewhere,45,Yes,1
+EMP0480,Exited,2026-03-14,Voluntary,Better role fit,30,Yes,1
+EMP0481,Active,,,,,,0
+EMP0482,Active,,,,,,0
+EMP0483,Active,,,,,,0
+EMP0484,Active,,,,,,0
+EMP0485,Active,,,,,,0
+EMP0486,Active,,,,,,0
+EMP0487,Active,,,,,,0
+EMP0488,Active,,,,,,0
+EMP0489,Active,,,,,,0
+EMP0490,Active,,,,,,0
+EMP0491,Active,,,,,,0
+EMP0492,Active,,,,,,0
+EMP0493,Active,,,,,,0
+EMP0494,Active,,,,,,0
+EMP0495,Active,,,,,,0
+EMP0496,Active,,,,,,0
+EMP0497,Active,,,,,,0
+EMP0498,Active,,,,,,0
+EMP0499,Active,,,,,,0
+EMP0500,Exited,2026-05-05,Voluntary,Relocation,0,Yes,1
