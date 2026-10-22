@@ -1,0 +1,57 @@
+ORBIT HR - V3 EVENT-BASED HOLDOUT EVALUATION
+Synthetic data only; not production validation.
+
+Total snapshots: 12249
+Total employees: 1197
+Training rows: 5038
+Validation rows: 413
+Test rows: 362
+Training employees: 703
+Validation employees: 210
+Test employees: 184
+Employee overlaps: train-validation=0, train-test=0, validation-test=0
+
+Training date range: 2025-01-01 to 2025-08-01
+Validation date range: 2025-09-01 to 2025-10-01
+Test date range: 2025-11-01 to 2025-12-01
+
+Selected validation threshold: 0.60
+Validation F1: 0.3759
+Validation precision: 0.3125
+Validation recall: 0.4717
+
+Test positive count: 36
+Test positive rate: 0.0994
+
+HELD-OUT TEST - LOGISTIC REGRESSION
+accuracy: 0.8149
+precision: 0.2540
+recall: 0.4444
+f1: 0.3232
+roc_auc: 0.7125
+average_precision: 0.2174
+Confusion matrix [[TN, FP], [FN, TP]]:
+[[279, 47], [20, 16]]
+
+HELD-OUT TEST - MAJORITY-CLASS BASELINE
+accuracy: 0.9006
+precision: 0.0000
+recall: 0.0000
+f1: 0.0000
+roc_auc: 0.5000
+average_precision: 0.0994
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.93      0.86      0.89       326
+           1       0.25      0.44      0.32        36
+
+    accuracy                           0.81       362
+   macro avg       0.59      0.65      0.61       362
+weighted avg       0.87      0.81      0.84       362
+
+Limitations: all records are synthetic; results do not establish real-world performance.
+Employee groups are disjoint, and each split uses its assigned calendar window.
+This is not a pure future-time test on the same employee population. Snapshot labels have overlapping 180-day outcome windows.
+Threshold selection optimizes validation F1; it is not a calibrated employment decision rule.

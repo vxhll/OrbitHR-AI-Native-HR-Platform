@@ -1,0 +1,82 @@
+ORBIT HR - WORK FROM HOME POLICY
+
+Policy ID: HR-WFH-001
+Policy Version: 1.0
+Effective Date: 01 January 2026
+Policy Type: Remote Work
+Status: Active
+Scope: Eligible full-time employees
+
+1. PURPOSE
+
+This policy defines the requirements and approval process for working from home.
+
+This is a synthetic policy created for the OrbitHR demonstration platform.
+
+2. ELIGIBILITY
+
+Work from home availability depends on the employee's role, department, operational requirements, and approved organizational arrangements.
+
+Not every role is eligible for remote work.
+
+3. APPROVAL
+
+Employees must obtain approval through the organization's designated workflow before working from home when prior approval is required.
+
+A work from home request is not automatically approved after submission.
+
+4. REQUEST PROCESS
+
+A request should normally include:
+
+- Requested date
+- Duration
+- Reason where required
+- Work location
+- Any relevant operational information
+
+The reporting manager reviews the request.
+
+HR may review requests where required.
+
+5. AVAILABILITY
+
+Employees working from home must remain available during their approved working hours and maintain expected communication with their team.
+
+6. WORK OUTPUT
+
+Employees working from home are expected to meet the same role-related responsibilities and performance expectations applicable to their position.
+
+7. SECURITY
+
+Employees working remotely must protect company information and use approved systems, devices, and access methods.
+
+Confidential company information should not be exposed to unauthorized individuals.
+
+8. CANCELLATION
+
+An approved work from home arrangement may be changed or cancelled when operational requirements require it.
+
+Employees should inform their reporting manager of relevant changes.
+
+9. FREQUENTLY ASKED QUESTIONS
+
+Q: Can every employee work from home?
+
+A: No. Eligibility depends on the employee's role, department, operational requirements, and approved organizational arrangements.
+
+Q: Does submitting a work from home request mean it is approved?
+
+A: No. Approval is required where the policy requires prior approval.
+
+Q: Who normally reviews a work from home request?
+
+A: The reporting manager normally reviews the request. HR may review it when required.
+
+Q: Are employees expected to remain available while working from home?
+
+A: Yes. Employees are expected to remain available during approved working hours.
+
+10. POLICY CONTACT
+
+Employees should contact HR for clarification about work from home eligibility or approval requirements.

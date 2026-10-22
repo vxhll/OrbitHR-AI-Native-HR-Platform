@@ -1,0 +1,78 @@
+ORBIT HR - PAYROLL POLICY
+
+Policy ID: HR-PAY-001
+Policy Version: 1.0
+Effective Date: 01 January 2026
+Policy Type: Payroll
+Status: Active
+Scope: All full-time employees
+
+1. PURPOSE
+
+This policy defines general payroll processing, salary information, deductions, attendance inputs, and payroll issue reporting.
+
+This is a synthetic policy created for the OrbitHR demonstration platform.
+
+2. PAYROLL CYCLE
+
+Payroll is processed according to the organization's configured monthly payroll cycle.
+
+Employees should ensure that required employee information is accurate and up to date.
+
+3. SALARY
+
+Employee salary information is maintained in the organization's HR system.
+
+Salary information is confidential and should only be accessible to authorized employees and HR personnel.
+
+4. ATTENDANCE INPUT
+
+Attendance and approved leave information may be used as inputs to payroll processing.
+
+Corrections to attendance or leave records should be completed through the designated HR process.
+
+5. DEDUCTIONS
+
+Applicable deductions may be reflected in payroll according to employee records and organizational requirements.
+
+Employees should contact HR or the payroll team when clarification is required.
+
+6. PAYROLL INFORMATION
+
+Employees should keep relevant personal and banking information updated in the HR system.
+
+Incorrect information may affect payroll processing.
+
+7. PAYROLL ISSUE REPORTING
+
+Employees who identify a potential payroll issue should raise the issue through the designated HR or payroll support process.
+
+The issue may require verification of employee, attendance, leave, or payroll records.
+
+8. CONFIDENTIALITY
+
+Employees must not disclose another employee's confidential salary information.
+
+Authorized HR and payroll personnel may access salary information for legitimate business purposes.
+
+9. FREQUENTLY ASKED QUESTIONS
+
+Q: Is attendance used in payroll processing?
+
+A: Attendance and approved leave information may be used as payroll inputs.
+
+Q: Who can access salary information?
+
+A: Salary information should only be accessible to authorized employees and HR personnel.
+
+Q: What should I do if my salary information appears incorrect?
+
+A: Raise the issue through the designated HR or payroll support process.
+
+Q: Should my banking information be kept updated?
+
+A: Yes. Employees should keep relevant banking information updated in the HR system.
+
+10. POLICY CONTACT
+
+Employees should contact HR or the payroll team for payroll-specific clarification.

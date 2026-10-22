@@ -48,7 +48,8 @@ pnpm-debug.log*
 *.onnx
 *.joblib
 *.pkl
-models/
+/ai/models/
+/ml/models/
 checkpoints/
 
 # =========================
@@ -82,3 +83,21 @@ Thumbs.db
 *.tmp
 *.temp
 *.bak
+# =========================
+# Local HR uploads and generated vector stores
+# =========================
+/backend/storage/onboarding/
+/backend/storage/rag/chroma/
+/ai/rag/vectorstore/
+
+# =========================
+# Local backups and source archive snapshots
+# =========================
+*.backup
+/frontend/orbit-frontend-source.zip
+
+# =========================
+# Accidental placeholder file
+# =========================
+/backend/str
+/backend/test_tax_declaration.pdf

@@ -1,0 +1,45 @@
+ORBIT HR — CHRONOLOGICAL HOLDOUT EVALUATION
+Synthetic data only; not production validation.
+
+Training rows: 5003
+Validation rows: 383
+Test rows: 369
+Training employees: 701
+Validation employees: 194
+Test employees: 187
+Employee overlaps: train-validation=0, train-test=0, validation-test=0
+
+Selected validation threshold: 0.60
+Validation F1 at threshold: 0.2459
+
+HELD-OUT TEST — LOGISTIC REGRESSION
+accuracy: 0.7859
+precision: 0.1818
+recall: 0.3243
+f1: 0.2330
+roc_auc: 0.6635
+average_precision: 0.2516
+Confusion matrix [[TN, FP], [FN, TP]]:
+[[278, 54], [25, 12]]
+
+HELD-OUT TEST — MAJORITY-CLASS BASELINE
+accuracy: 0.8997
+precision: 0.0000
+recall: 0.0000
+f1: 0.0000
+roc_auc: 0.5000
+average_precision: 0.1003
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.84      0.88       332
+           1       0.18      0.32      0.23        37
+
+    accuracy                           0.79       369
+   macro avg       0.55      0.58      0.55       369
+weighted avg       0.84      0.79      0.81       369
+
+Limitations: features are simulated aggregates, not raw historical records.
+This evaluation tests later dates and unseen employee groups,
+but does not prove real-world attrition forecasting performance.

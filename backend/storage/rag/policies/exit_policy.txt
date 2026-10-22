@@ -1,0 +1,100 @@
+ORBIT HR - EXIT POLICY
+
+Policy ID: HR-EXIT-001
+Policy Version: 1.0
+Effective Date: 01 January 2026
+Policy Type: Employee Exit
+Status: Active
+Scope: Employees completing employment
+
+1. PURPOSE
+
+This policy defines the general employee exit process, including resignation, notice period, approvals, handover, asset return, and exit documentation.
+
+This is a synthetic policy created for the OrbitHR demonstration platform.
+
+2. RESIGNATION
+
+Employees who wish to resign should submit their resignation through the organization's designated HR process.
+
+The resignation record should include the intended last working date where applicable.
+
+3. NOTICE PERIOD
+
+The applicable notice period depends on the employee's employment terms and organizational rules.
+
+Employees should refer to their employment agreement or contact HR for the applicable notice period.
+
+4. APPROVAL
+
+A resignation is processed through the designated HR workflow.
+
+The reporting manager and HR may be involved in reviewing the resignation and exit timeline.
+
+5. HANDOVER
+
+Employees are expected to complete an appropriate handover before their last working day.
+
+The handover may include:
+
+- Current responsibilities
+- Projects
+- Documentation
+- Pending work
+- Relevant contacts
+- System information where authorized
+
+6. COMPANY ASSETS
+
+Employees must return applicable company assets before or during the exit process.
+
+Examples include:
+
+- Laptop
+- Access cards
+- Company equipment
+- Other assigned property
+
+7. ACCESS REVOCATION
+
+Company system access may be reviewed and revoked as part of the employee exit process.
+
+Access management should follow authorized security procedures.
+
+8. EXIT INTERVIEW
+
+HR may conduct an exit interview to understand employee experience, reasons for leaving, and opportunities for organizational improvement.
+
+Exit feedback may be analyzed in aggregate.
+
+9. FINAL SETTLEMENT
+
+Final payroll or settlement processing is handled according to the organization's applicable procedures and employee records.
+
+Employees should contact HR or payroll regarding settlement questions.
+
+10. FREQUENTLY ASKED QUESTIONS
+
+Q: How do I resign?
+
+A: Submit your resignation through the designated HR process.
+
+Q: What is my notice period?
+
+A: The applicable notice period depends on your employment terms and organizational rules. Contact HR if clarification is required.
+
+Q: Do I need to complete a handover?
+
+A: Employees are expected to complete an appropriate handover before their last working day.
+
+Q: What happens to company equipment?
+
+A: Applicable company assets must be returned during the exit process.
+
+Q: Can exit interviews be conducted?
+
+A: Yes. HR may conduct an exit interview to understand employee experience and identify improvement opportunities.
+
+11. POLICY CONTACT
+
+Employees should contact HR for clarification regarding resignation, notice period, handover, or final settlement.

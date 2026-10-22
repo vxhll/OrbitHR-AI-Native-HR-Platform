@@ -10,6 +10,9 @@ from app.models.payroll import Payroll
 from app.models.performance_review import PerformanceReview
 from app.models.engagement_survey import EngagementSurvey
 from app.models.leave_record import LeaveRecord
+from app.models.auth.user import User
+from app.security.dependencies import get_current_user
+
 
 router = APIRouter(
     prefix="/api/employees",
@@ -20,6 +23,7 @@ router = APIRouter(
 @router.get("")
 def get_employees(
     db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
     employees = db.scalars(
         select(Employee)
@@ -54,7 +58,17 @@ def get_employees(
 def get_employee(
     employee_id: str,
     db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
+    if (
+        current_user.role.upper() == "EMPLOYEE"
+        and current_user.employee_id != employee_id
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Employees can only access their own employee record",
+        )
+
     employee = db.scalar(
         select(Employee).where(
             Employee.employee_id == employee_id
@@ -83,11 +97,23 @@ def get_employee(
         "annual_base_salary_inr": employee.annual_base_salary_inr,
         "manager_id": employee.manager_id,
     }
+
+
 @router.get("/{employee_id}/profile")
 def get_employee_profile(
     employee_id: str,
     db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
+    if (
+        current_user.role.upper() == "EMPLOYEE"
+        and current_user.employee_id != employee_id
+    ):
+        raise HTTPException(
+            status_code=403,
+            detail="Employees can only access their own employee profile",
+        )
+
     # ---------------------------------------------------------
     # Employee
     # ---------------------------------------------------------

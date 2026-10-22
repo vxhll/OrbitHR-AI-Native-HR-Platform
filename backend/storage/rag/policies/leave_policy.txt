@@ -1,0 +1,131 @@
+ORBIT HR — LEAVE POLICY
+
+Policy ID: HR-LEAVE-001
+Policy Version: 1.0
+Effective Date: 01 January 2026
+Policy Type: Employee Leave
+Status: Active
+Scope: All full-time employees
+
+1. PURPOSE
+
+This policy defines the types of leave available to employees, eligibility requirements, approval rules, and general procedures for requesting leave.
+
+This is a synthetic policy created for the OrbitHR demonstration platform.
+
+2. ANNUAL LEAVE ENTITLEMENT
+
+Full-time employees receive 24 days of paid leave per calendar year.
+
+The annual leave entitlement is allocated as follows:
+
+- Casual Leave: 6 days
+- Sick Leave: 6 days
+- Earned Leave: 12 days
+
+Unused Casual Leave and Sick Leave do not automatically carry forward to the next calendar year.
+
+Earned Leave may be carried forward subject to the organization's applicable leave rules.
+
+3. CASUAL LEAVE
+
+Casual Leave is intended for short-duration personal requirements.
+
+Employees may request Casual Leave for:
+
+- Personal appointments
+- Family requirements
+- Urgent personal matters
+- Short-term personal commitments
+
+Casual Leave should normally be requested at least one working day in advance.
+
+For unexpected situations, the employee should inform the reporting manager as soon as reasonably possible.
+
+4. SICK LEAVE
+
+Sick Leave is intended for illness, medical recovery, or health-related situations.
+
+Employees should notify their reporting manager when they are unable to attend work due to illness.
+
+A medical certificate may be requested for extended periods of sick leave or where required by HR.
+
+5. EARNED LEAVE
+
+Earned Leave is intended for planned longer-duration absence.
+
+Employees should normally submit an Earned Leave request at least seven calendar days before the planned leave start date.
+
+Earned Leave requests are subject to manager approval and operational requirements.
+
+6. LEAVE REQUEST PROCESS
+
+Employees must submit leave requests through the organization's designated HR or leave management system.
+
+A leave request should contain:
+
+- Leave type
+- Start date
+- End date
+- Number of leave days
+- Reason, where required
+
+The reporting manager is responsible for reviewing the request.
+
+HR may review leave requests when required by policy or compliance procedures.
+
+7. LEAVE APPROVAL
+
+Submitting a leave request does not automatically mean that the leave has been approved.
+
+Leave becomes approved only after the designated approver accepts the request.
+
+Employees should not assume that a pending leave request is approved.
+
+8. EXTENDED LEAVE
+
+Leave extending beyond normal entitlement requires additional HR review.
+
+Extended leave may require supporting documentation and approval from both the reporting manager and HR.
+
+9. HOLIDAYS AND WEEKENDS
+
+Organization holidays and weekly non-working days are handled according to the applicable organizational calendar and leave configuration.
+
+The HR system determines the applicable leave-day calculation.
+
+10. LEAVE CANCELLATION
+
+Employees may request cancellation of an approved future leave period.
+
+Cancellation is subject to manager approval and operational requirements.
+
+11. FREQUENTLY ASKED QUESTIONS
+
+Q: How many paid leave days are available per year?
+
+A: Full-time employees receive 24 days of paid leave per calendar year.
+
+Q: How many Casual Leave days are available?
+
+A: Employees receive 6 Casual Leave days per calendar year.
+
+Q: How many Sick Leave days are available?
+
+A: Employees receive 6 Sick Leave days per calendar year.
+
+Q: How many Earned Leave days are available?
+
+A: Employees receive 12 Earned Leave days per calendar year.
+
+Q: Does submitting a leave request mean it is approved?
+
+A: No. A leave request must be approved by the designated approver.
+
+Q: How early should Earned Leave normally be requested?
+
+A: Earned Leave should normally be requested at least seven calendar days before the planned start date.
+
+12. POLICY CONTACT
+
+Employees should contact HR for clarification when a situation is not covered by this policy.

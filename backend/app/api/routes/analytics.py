@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Depends
+from datetime import date
 from sqlalchemy import select, func
 from sqlalchemy.orm import Session
 from ml.attrition.feature_service import build_attrition_features
-
+from app.models.employee_exit import EmployeeExit
+from app.models.exit_interview import ExitInterview
 from app.db.database import get_db
 from app.models.employee import Employee
 from app.models.attrition_record import AttritionRecord
@@ -360,27 +361,41 @@ def get_attrition_features(
             "attrited_within_180_days_label": attrition_label,
         },
     }
+
+
 @router.get("/attrition-predict/{employee_id}")
 def predict_attrition(
     employee_id: str,
     db: Session = Depends(get_db),
 ):
-    # -------------------------
-    # Build features using the
-    # shared feature service
-    # -------------------------
+    from ml.attrition.prediction_service import (
+        AttritionPredictionService,
+    )
+
+    service = AttritionPredictionService()
 
     try:
-        feature_data = build_attrition_features(
-            db,
-            employee_id,
+        result = service.predict(
+            db=db,
+            employee_id=employee_id,
         )
+
+        # Preserve the existing API response structure.
+        result.pop("features", None)
+
+        return result
 
     except ValueError as exc:
         raise HTTPException(
             status_code=404,
             detail=str(exc),
         )
+
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=500,
+            detail="Attrition model has not been trained yet",
+        ) from exc
 
     # -------------------------
     # Feature vector
@@ -472,5 +487,107 @@ def predict_attrition(
         "model": {
             "name": "Logistic Regression",
             "version": "baseline-1.0",
+        },
+    }
+@router.get("/attrition-predict-v3/{employee_id}")
+def predict_attrition_v3(
+    employee_id: str,
+    prediction_date: date,
+):
+    from ml.attrition.event_based_prediction_service import (
+        EventBasedPredictionService,
+    )
+
+    service = EventBasedPredictionService()
+
+    try:
+        return service.predict(
+            employee_id=employee_id,
+            prediction_date=prediction_date,
+        )
+
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc),
+        ) from exc
+
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=500,
+            detail="V3 model or synthetic dataset is unavailable.",
+        ) from exc
+
+
+@router.get("/exits")
+def get_exit_analytics(db: Session = Depends(get_db)):
+    total_exits = db.scalar(
+        select(func.count(EmployeeExit.id))
+    ) or 0
+
+    exit_types = db.execute(
+        select(
+            EmployeeExit.exit_type,
+            func.count(EmployeeExit.id).label("count"),
+        )
+        .group_by(EmployeeExit.exit_type)
+        .order_by(EmployeeExit.exit_type)
+    ).all()
+
+    monthly_exits = db.execute(
+        select(
+            func.to_char(EmployeeExit.exit_date, "YYYY-MM").label("month"),
+            func.count(EmployeeExit.id).label("count"),
+        )
+        .group_by(func.to_char(EmployeeExit.exit_date, "YYYY-MM"))
+        .order_by(func.to_char(EmployeeExit.exit_date, "YYYY-MM"))
+    ).all()
+
+    interview_count = db.scalar(
+        select(func.count(ExitInterview.id))
+    ) or 0
+
+    average_satisfaction = db.scalar(
+        select(func.avg(ExitInterview.overall_satisfaction_1to10))
+    )
+
+    recommendation_responses = db.scalar(
+        select(func.count(ExitInterview.id)).where(
+            ExitInterview.would_recommend_company.is_not(None)
+        )
+    ) or 0
+
+    recommendation_yes = db.scalar(
+        select(func.count(ExitInterview.id)).where(
+            ExitInterview.would_recommend_company.is_(True)
+        )
+    ) or 0
+
+    recommendation_percentage = (
+        round((recommendation_yes / recommendation_responses) * 100, 2)
+        if recommendation_responses
+        else None
+    )
+
+    return {
+        "total_recorded_exits": total_exits,
+        "exit_type_breakdown": [
+            {"exit_type": exit_type, "count": count}
+            for exit_type, count in exit_types
+        ],
+        "monthly_exit_trends": [
+            {"month": month, "count": count}
+            for month, count in monthly_exits
+        ],
+        "exit_interviews": {
+            "total_interviews": interview_count,
+            "average_satisfaction": (
+                round(float(average_satisfaction), 2)
+                if average_satisfaction is not None
+                else None
+            ),
+            "recommendation_responses": recommendation_responses,
+            "recommendation_yes": recommendation_yes,
+            "recommendation_percentage": recommendation_percentage,
         },
     }

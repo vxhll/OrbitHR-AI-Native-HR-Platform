@@ -1,0 +1,108 @@
+ORBIT HR - ONBOARDING POLICY
+
+Policy ID: HR-ONB-001
+Policy Version: 1.0
+Effective Date: 01 January 2026
+Policy Type: Employee Onboarding
+Status: Active
+Scope: Newly hired employees
+
+1. PURPOSE
+
+This policy defines the onboarding process for newly hired employees, including required documentation, tasks, verification, and readiness.
+
+This is a synthetic policy created for the OrbitHR demonstration platform.
+
+2. ONBOARDING CASE
+
+An onboarding case is created for a newly hired employee.
+
+The onboarding case tracks tasks, required documents, progress, and readiness.
+
+3. ADAPTIVE TASKS
+
+Onboarding tasks may vary based on:
+
+- Department
+- Job role
+- Job level
+- Employee responsibilities
+
+Common HR tasks may be combined with role-specific tasks.
+
+4. REQUIRED DOCUMENTS
+
+The standard onboarding process may require:
+
+- Identity Proof
+- Address Proof
+- Bank Account Details
+- Tax Declaration
+
+Additional documentation may be requested when required.
+
+5. DOCUMENT SUBMISSION
+
+Employees must submit required documents through the designated HR system.
+
+Uploaded documents are stored according to the organization's security and access controls.
+
+6. DOCUMENT VERIFICATION
+
+HR or an authorized reviewer verifies submitted documents.
+
+A document may be:
+
+- Pending
+- Submitted
+- Verified
+- Rejected
+
+Rejected documents may require re-submission.
+
+7. ONBOARDING TASKS
+
+Employees must complete the tasks assigned to their onboarding case.
+
+Tasks may include:
+
+- Completing the employee profile
+- Acknowledging the employee handbook
+- Security awareness training
+- Meeting HR
+- Role-specific setup
+- Manager orientation
+
+8. ONBOARDING READINESS
+
+An employee is onboarding-ready when all required onboarding tasks are completed and all required documents are verified.
+
+The HR system calculates onboarding completion and readiness.
+
+9. HUMAN REVIEW
+
+Sensitive onboarding decisions requiring HR judgment must remain subject to human review.
+
+The system should not automatically make employment decisions without appropriate authorization.
+
+10. FREQUENTLY ASKED QUESTIONS
+
+Q: What documents are normally required?
+
+A: Identity Proof, Address Proof, Bank Account Details, and Tax Declaration are standard onboarding documents.
+
+Q: Can onboarding tasks differ between employees?
+
+A: Yes. Tasks may vary based on department, job role, and job level.
+
+Q: What happens if a document is rejected?
+
+A: The employee may need to re-submit the required document.
+
+Q: When is an employee onboarding-ready?
+
+A: When all required tasks are completed and all required documents are verified.
+
+11. POLICY CONTACT
+
+Employees should contact HR for onboarding questions or clarification.

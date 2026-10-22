@@ -1,0 +1,76 @@
+ORBIT HR - ATTENDANCE POLICY
+
+Policy ID: HR-ATT-001
+Policy Version: 1.0
+Effective Date: 01 January 2026
+Policy Type: Attendance
+Status: Active
+Scope: All full-time employees
+
+1. PURPOSE
+
+This policy defines attendance expectations, working hours, login requirements, late arrival, absence reporting, and attendance correction procedures.
+
+This is a synthetic policy created for the OrbitHR demonstration platform.
+
+2. STANDARD WORKING HOURS
+
+Employees are expected to follow the working hours assigned to their department, role, location, and employment arrangement.
+
+The standard working schedule is maintained in the organization's HR system.
+
+3. ATTENDANCE RECORDING
+
+Employees must record attendance using the organization's designated attendance or login system.
+
+Attendance records may be used for workforce management, payroll processing, compliance, and reporting.
+
+4. LATE ARRIVAL
+
+Employees arriving after their scheduled start time should inform their reporting manager when required.
+
+Repeated late arrivals may be reviewed by the reporting manager and HR.
+
+5. ABSENCE
+
+Employees who cannot attend work should inform their reporting manager as soon as reasonably possible.
+
+An absence without appropriate notification may be treated as an unauthorized absence subject to HR review.
+
+6. ATTENDANCE CORRECTION
+
+If an employee believes that an attendance record is incorrect, the employee should submit an attendance correction request through the designated HR system.
+
+The request may require manager or HR approval.
+
+7. REMOTE WORK ATTENDANCE
+
+Employees working remotely must follow the attendance and login requirements applicable to their approved work arrangement.
+
+8. UNAUTHORIZED ABSENCE
+
+Unauthorized absence may be reviewed by HR and the reporting manager.
+
+Any resulting action must follow applicable company procedures and human review.
+
+9. FREQUENTLY ASKED QUESTIONS
+
+Q: How should I report an absence?
+
+A: Inform your reporting manager as soon as reasonably possible and follow the designated HR process.
+
+Q: What should I do if my attendance record is incorrect?
+
+A: Submit an attendance correction request through the designated HR system.
+
+Q: Can repeated late arrivals be reviewed?
+
+A: Yes. Repeated late arrivals may be reviewed by the reporting manager and HR.
+
+Q: Is attendance used for payroll processing?
+
+A: Attendance records may be used as an input for payroll processing.
+
+10. POLICY CONTACT
+
+Employees should contact HR for clarification regarding attendance situations not covered by this policy.
