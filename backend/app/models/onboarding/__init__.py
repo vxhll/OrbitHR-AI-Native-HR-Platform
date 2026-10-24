@@ -1,9 +1,11 @@
 from app.models.onboarding.case import OnboardingCase
-from app.models.onboarding.task import OnboardingTask
 from app.models.onboarding.document import OnboardingDocument
+from app.models.onboarding.reminder import OnboardingReminder
+from app.models.onboarding.task import OnboardingTask
 
 __all__ = [
     "OnboardingCase",
-    "OnboardingTask",
     "OnboardingDocument",
+    "OnboardingReminder",
+    "OnboardingTask",
 ]

@@ -25,6 +25,9 @@ from app.schemas.onboarding import (
 )
 from app.security.dependencies import get_current_user, require_hr
 from app.services.onboarding_service import OnboardingService
+from app.services.onboarding_reminder_service import (
+    run_onboarding_reminders,
+)
 
 
 router = APIRouter(
@@ -355,3 +358,21 @@ def get_overdue_onboarding_tasks(
         "total_overdue_tasks": len(tasks),
         "tasks": tasks,
     }
+
+@router.post(
+    "/automation/reminders/run",
+    dependencies=[Depends(require_hr)],
+)
+def trigger_onboarding_reminders(
+    dry_run: bool = True,
+    db: Session = Depends(get_db),
+):
+    """
+    Preview overdue-task reminders or trigger configured delivery.
+
+    HR access is required. Dry-run mode is enabled by default.
+    """
+    return run_onboarding_reminders(
+        db=db,
+        dry_run=dry_run,
+    )

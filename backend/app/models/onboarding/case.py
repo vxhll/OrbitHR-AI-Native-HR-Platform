@@ -14,7 +14,8 @@ class OnboardingCase(Base):
         autoincrement=True,
     )
 
-    employee_id: Mapped[int] = mapped_column(
+    employee_id: Mapped[str] = mapped_column(
+        String(20),
         ForeignKey("employees.employee_id"),
         nullable=False,
     )
