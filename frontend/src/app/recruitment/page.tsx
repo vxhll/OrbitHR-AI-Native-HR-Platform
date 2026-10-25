@@ -115,7 +115,6 @@ const inputClassName = "recruitment-input";
 
 export default function RecruitmentPage() {
   const router = useRouter();
-
   const [user, setUser] = useState<CurrentUser | null>(null);
   const [jobs, setJobs] = useState<Job[]>([]);
   const [candidates, setCandidates] = useState<Candidate[]>([]);
@@ -559,6 +558,14 @@ export default function RecruitmentPage() {
             ORBIT HR <small>/ TALENT INTELLIGENCE</small>
           </span>
         </div>
+
+        <button
+          type="button"
+          className="recruitment-secondary-button"
+          onClick={() => router.push("/analytics/exits")}
+        >
+          Exit Analytics
+        </button>
 
         <button className="recruitment-signout" onClick={signOut} type="button">
           <LogOut size={15} /> Sign out

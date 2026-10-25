@@ -8,7 +8,7 @@ from app.services.resume_screening_service import ResumeScreeningService
 from app.services.resume_screening_summary_service import (
     ResumeScreeningSummaryService,
 )
-from datetime import datetime
+from datetime import UTC, datetime
 
 
 class RecruitmentService:
@@ -226,7 +226,7 @@ class RecruitmentService:
 
         application.human_review_status = review_status
         application.reviewed_by = reviewed_by
-        application.reviewed_at = datetime.utcnow()
+        application.reviewed_at = datetime.now(UTC)
         application.review_notes = review_notes
 
         db.commit()

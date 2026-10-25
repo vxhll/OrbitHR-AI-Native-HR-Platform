@@ -1,15 +1,26 @@
 import sys
 from pathlib import Path
-from fastapi.middleware.cors import CORSMiddleware
-from app.api.routes.exit_interviews import router as exit_interviews_router
-from app.api.routes.leave import router as leave_router
 
+from dotenv import load_dotenv
+
+# Resolve project paths before importing application modules.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+BACKEND_ROOT = PROJECT_ROOT / "backend"
 
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+# Load environment variables from the backend configuration.
+load_dotenv(BACKEND_ROOT / ".env")
+
+# Ensure the root-level ml package takes precedence over backend/ml.
+for path in (str(PROJECT_ROOT), str(BACKEND_ROOT)):
+    while path in sys.path:
+        sys.path.remove(path)
+
+sys.path.insert(0, str(BACKEND_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 from app.api.routes.employees import router as employees_router
 from app.api.routes.departments import router as departments_router
 from app.api.routes.analytics import router as analytics_router
@@ -17,8 +28,11 @@ from app.api.routes.rag import router as rag_router
 from app.api.routes.recruitment import router as recruitment_router
 from app.api.routes.onboarding import router as onboarding_router
 from app.api.routes import support
-from app.routers.auth.auth import router as auth_router
+from app.api.routes.leave import router as leave_router
 from app.api.routes.offboarding import router as offboarding_router
+from app.api.routes.exit_interviews import router as exit_interviews_router
+from app.routers.auth.auth import router as auth_router
+
 app = FastAPI(
     title="OrbitHR API",
     description="AI-Native HR Lifecycle & Predictive Retention Platform",

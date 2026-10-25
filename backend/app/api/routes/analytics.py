@@ -1,22 +1,22 @@
 from datetime import date
-from sqlalchemy import select, func
-from sqlalchemy.orm import Session
-from ml.attrition.feature_service import build_attrition_features
-from app.models.employee_exit import EmployeeExit
-from app.models.exit_interview import ExitInterview
-from app.db.database import get_db
-from app.models.employee import Employee
-from app.models.attrition_record import AttritionRecord
-from app.models.attendance_login import AttendanceLogin
-from app.models.performance_review import PerformanceReview
-from app.models.engagement_survey import EngagementSurvey
-from app.models.leave_record import LeaveRecord
-from app.models.payroll import Payroll
-import os
-import joblib
-import pandas as pd
 
 from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy import func, select
+from sqlalchemy.orm import Session
+
+from app.db.database import get_db
+from app.models.attrition_record import AttritionRecord
+from app.models.attendance_login import AttendanceLogin
+from app.models.department import Department
+from app.models.employee import Employee
+from app.models.employee_exit import EmployeeExit
+from app.models.engagement_survey import EngagementSurvey
+from app.models.exit_interview import ExitInterview
+from app.models.leave_record import LeaveRecord
+from app.models.payroll import Payroll
+from app.models.performance_review import PerformanceReview
+from app.security.dependencies import require_hr
+
 
 router = APIRouter(
     prefix="/api/analytics",
@@ -24,7 +24,10 @@ router = APIRouter(
 )
 
 
-@router.get("/overview")
+@router.get(
+    "/overview",
+    dependencies=[Depends(require_hr)],
+)
 def get_organization_overview(
     db: Session = Depends(get_db),
 ):
@@ -110,7 +113,12 @@ def get_organization_overview(
             ),
         },
     }
-@router.get("/departments")
+
+
+@router.get(
+    "/departments",
+    dependencies=[Depends(require_hr)],
+)
 def get_department_analytics(
     db: Session = Depends(get_db),
 ):
@@ -198,7 +206,12 @@ def get_department_analytics(
         "count": len(results),
         "departments": results,
     }
-@router.get("/attrition-features/{employee_id}")
+
+
+@router.get(
+    "/attrition-features/{employee_id}",
+    dependencies=[Depends(require_hr)],
+)
 def get_attrition_features(
     employee_id: str,
     db: Session = Depends(get_db),
@@ -208,14 +221,11 @@ def get_attrition_features(
     )
 
     if employee is None:
-        from fastapi import HTTPException
-
         raise HTTPException(
             status_code=404,
             detail=f"Employee {employee_id} not found",
         )
 
-    # Attendance features
     attendance_count = db.scalar(
         select(func.count(AttendanceLogin.id)).where(
             AttendanceLogin.employee_id == employee_id
@@ -235,7 +245,6 @@ def get_attrition_features(
         )
     ) or 0
 
-    # Performance features
     average_performance = db.scalar(
         select(func.avg(PerformanceReview.performance_rating_1to5)).where(
             PerformanceReview.employee_id == employee_id
@@ -251,11 +260,10 @@ def get_attrition_features(
     promotion_count = db.scalar(
         select(func.count(PerformanceReview.id)).where(
             PerformanceReview.employee_id == employee_id,
-            PerformanceReview.promotion_flag == True,
+            PerformanceReview.promotion_flag.is_(True),
         )
     ) or 0
 
-    # Engagement features
     average_engagement = db.scalar(
         select(func.avg(EngagementSurvey.engagement_score_1to10)).where(
             EngagementSurvey.employee_id == employee_id
@@ -274,7 +282,6 @@ def get_attrition_features(
         )
     )
 
-    # Leave features
     leave_count = db.scalar(
         select(func.count(LeaveRecord.id)).where(
             LeaveRecord.employee_id == employee_id
@@ -287,14 +294,12 @@ def get_attrition_features(
         )
     ) or 0
 
-    # Payroll features
     payroll_count = db.scalar(
         select(func.count(Payroll.id)).where(
             Payroll.employee_id == employee_id
         )
     ) or 0
 
-    # Historical attrition label
     attrition = db.scalar(
         select(AttritionRecord).where(
             AttritionRecord.employee_id == employee_id
@@ -309,12 +314,10 @@ def get_attrition_features(
 
     return {
         "employee_id": employee.employee_id,
-
         "features": {
             "age": employee.age,
             "tenure_years": float(employee.tenure_years_at_period_start),
             "annual_base_salary_inr": employee.annual_base_salary_inr,
-
             "attendance_record_count": attendance_count,
             "average_hours_worked": (
                 round(float(average_hours), 2)
@@ -322,7 +325,6 @@ def get_attrition_features(
                 else 0
             ),
             "absent_days": absent_days,
-
             "average_performance_rating": (
                 round(float(average_performance), 2)
                 if average_performance is not None
@@ -334,7 +336,6 @@ def get_attrition_features(
                 else 0
             ),
             "promotion_count": promotion_count,
-
             "average_engagement_score": (
                 round(float(average_engagement), 2)
                 if average_engagement is not None
@@ -350,27 +351,25 @@ def get_attrition_features(
                 if average_nps is not None
                 else 0
             ),
-
             "leave_record_count": leave_count,
             "total_leave_days": total_leave_days,
-
             "payroll_record_count": payroll_count,
         },
-
         "target": {
             "attrited_within_180_days_label": attrition_label,
         },
     }
 
 
-@router.get("/attrition-predict/{employee_id}")
+@router.get(
+    "/attrition-predict/{employee_id}",
+    dependencies=[Depends(require_hr)],
+)
 def predict_attrition(
     employee_id: str,
     db: Session = Depends(get_db),
 ):
-    from ml.attrition.prediction_service import (
-        AttritionPredictionService,
-    )
+    from ml.attrition.prediction_service import AttritionPredictionService
 
     service = AttritionPredictionService()
 
@@ -382,14 +381,13 @@ def predict_attrition(
 
         # Preserve the existing API response structure.
         result.pop("features", None)
-
         return result
 
     except ValueError as exc:
         raise HTTPException(
             status_code=404,
             detail=str(exc),
-        )
+        ) from exc
 
     except FileNotFoundError as exc:
         raise HTTPException(
@@ -397,99 +395,11 @@ def predict_attrition(
             detail="Attrition model has not been trained yet",
         ) from exc
 
-    # -------------------------
-    # Feature vector
-    # -------------------------
 
-    feature_columns = [
-        "age",
-        "tenure_years",
-        "annual_base_salary_inr",
-        "attendance_record_count",
-        "average_hours_worked",
-        "absent_days",
-        "average_performance_rating",
-        "average_manager_feedback_score",
-        "promotion_count",
-        "average_engagement_score",
-        "average_job_satisfaction_score",
-        "average_employee_nps",
-        "leave_record_count",
-        "total_leave_days",
-        "payroll_record_count",
-    ]
-
-    features = pd.DataFrame(
-        [[feature_data[column] for column in feature_columns]],
-        columns=feature_columns,
-    )
-
-    # -------------------------
-    # Load trained model
-    # -------------------------
-
-    project_root = r"D:\OrbitHR-AI-Native-HR-Platform"
-
-    model_path = os.path.join(
-        project_root,
-        "ml",
-        "attrition",
-        "attrition_logistic_regression.joblib",
-    )
-
-    if not os.path.exists(model_path):
-        raise HTTPException(
-            status_code=500,
-            detail="Attrition model has not been trained yet",
-        )
-
-    model = joblib.load(model_path)
-
-    # -------------------------
-    # Prediction
-    # -------------------------
-
-    prediction = int(
-        model.predict(features)[0]
-    )
-
-    probability = float(
-        model.predict_proba(features)[0][1]
-    )
-
-    probability_percent = round(
-        probability * 100,
-        2,
-    )
-
-    # -------------------------
-    # Risk classification
-    # -------------------------
-
-    if probability >= 0.70:
-        risk_level = "High"
-    elif probability >= 0.40:
-        risk_level = "Medium"
-    else:
-        risk_level = "Low"
-
-    # -------------------------
-    # Response
-    # -------------------------
-
-    return {
-        "employee_id": employee_id,
-        "prediction": {
-            "attrition_probability_percent": probability_percent,
-            "risk_level": risk_level,
-            "predicted_attrition": bool(prediction),
-        },
-        "model": {
-            "name": "Logistic Regression",
-            "version": "baseline-1.0",
-        },
-    }
-@router.get("/attrition-predict-v3/{employee_id}")
+@router.get(
+    "/attrition-predict-v3/{employee_id}",
+    dependencies=[Depends(require_hr)],
+)
 def predict_attrition_v3(
     employee_id: str,
     prediction_date: date,
@@ -519,7 +429,11 @@ def predict_attrition_v3(
         ) from exc
 
 
-@router.get("/exits")
+
+@router.get(
+    "/exits",
+    dependencies=[Depends(require_hr)],
+)
 def get_exit_analytics(db: Session = Depends(get_db)):
     total_exits = db.scalar(
         select(func.count(EmployeeExit.id))
@@ -564,16 +478,58 @@ def get_exit_analytics(db: Session = Depends(get_db)):
     ) or 0
 
     recommendation_percentage = (
-        round((recommendation_yes / recommendation_responses) * 100, 2)
+        round(
+            (recommendation_yes / recommendation_responses) * 100,
+            2,
+        )
         if recommendation_responses
         else None
     )
+
+    exit_reasons = db.execute(
+        select(
+            EmployeeExit.exit_reason,
+            func.count(EmployeeExit.id).label("count"),
+        )
+        .group_by(EmployeeExit.exit_reason)
+        .order_by(EmployeeExit.exit_reason)
+    ).all()
+
+    department_exits = db.execute(
+        select(
+            Department.id.label("department_id"),
+            Department.name.label("department_name"),
+            func.count(EmployeeExit.id).label("count"),
+        )
+        .join(
+            Employee,
+            Employee.department_id == Department.id,
+        )
+        .join(
+            EmployeeExit,
+            EmployeeExit.employee_id == Employee.employee_id,
+        )
+        .group_by(Department.id, Department.name)
+        .order_by(Department.name)
+    ).all()
 
     return {
         "total_recorded_exits": total_exits,
         "exit_type_breakdown": [
             {"exit_type": exit_type, "count": count}
             for exit_type, count in exit_types
+        ],
+        "exit_reason_breakdown": [
+            {"exit_reason": reason, "count": count}
+            for reason, count in exit_reasons
+        ],
+        "department_exit_breakdown": [
+            {
+                "department_id": department_id,
+                "department_name": department_name,
+                "count": count,
+            }
+            for department_id, department_name, count in department_exits
         ],
         "monthly_exit_trends": [
             {"month": month, "count": count}
