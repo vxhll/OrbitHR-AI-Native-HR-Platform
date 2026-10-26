@@ -1,14 +1,34 @@
-# OrbitHR — AI-Native HR Platform
+<div align="center">
+
+# OrbitHR
+### AI-Native HR Platform
+
+**Workforce Operations · People Analytics · Recruitment · Responsible AI**
+
+[![Built with Next.js](https://img.shields.io/badge/Frontend-Next.js-black?logo=next.js)](https://nextjs.org/)
+[![Backend](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Database](https://img.shields.io/badge/Database-PostgreSQL-4169E1?logo=postgresql)](https://www.postgresql.org/)
+[![License](https://img.shields.io/badge/License-Permission%20Required-bb3b3b)](#license)
+
+</div>
 
 An AI-enabled Human Resources platform designed to bring workforce operations, employee self-service, recruitment, people analytics, and responsible AI into one interface.
 
 <p align="center">
-  <strong>Workforce Management · People Analytics · Recruitment · Responsible AI</strong>
-</p>
-
-<p align="center">
   <img src="docs/screenshots/hr-dashboard.png" alt="OrbitHR Workforce Overview dashboard" width="100%">
 </p>
+
+## Contents
+
+- [Overview](#overview)
+- [Key Areas](#key-areas)
+- [Screenshots](#screenshots)
+- [Technology Stack](#technology-stack)
+- [Architecture](#architecture-at-a-glance)
+- [Getting Started](#getting-started)
+- [Security and Privacy](#security-and-privacy)
+- [Current Scope and Limitations](#current-scope-and-limitations)
+- [License](#license)
 
 ## Overview
 
@@ -16,7 +36,7 @@ OrbitHR is a full-stack HR platform project built around a shared workforce work
 
 The current interface includes workforce overview, employee self-service, recruitment operations, exit analytics, and an Attrition Intelligence research view. The attrition model view is explicitly a **synthetic-data research prototype** and must not be treated as a validated predictor for real employees or used as the sole basis for employment decisions.
 
-## Key areas
+## Key Areas
 
 | Module | What it provides |
 |---|---|
@@ -55,7 +75,7 @@ Add the supplied screenshots to `docs/screenshots/` using the filenames below, o
 ### Login
 ![OrbitHR login page](docs/screenshots/login-page.png)
 
-## Technology stack
+## Technology Stack
 
 ### Backend
 - Python
@@ -102,7 +122,7 @@ Alembic -> database schema migrations
 
 The frontend communicates with the FastAPI API. Protected endpoints use bearer-token authentication and backend role checks. The attrition research endpoint is HR/Admin restricted; do not remove those server-side checks to work around a frontend authorization error.
 
-## Repository structure
+## Repository Structure
 
 The project uses a backend/frontend layout. The exact contents may evolve as development continues.
 
@@ -122,7 +142,7 @@ OrbitHR-AI-Native-HR-Platform/
 └── ...
 ```
 
-## Getting started
+## Getting Started
 
 ### Prerequisites
 
@@ -220,7 +240,7 @@ Open `http://localhost:3000`.
 
 Use an account configured for your local development environment. Verify the role assigned to that account before testing protected HR/Admin features. Do not publish credentials or tokens in the README, screenshots, issue reports, or source control.
 
-## API and access control
+## API and Access Control
 
 - FastAPI provides the backend API.
 - Protected frontend requests should include the bearer token required by the backend.
@@ -248,7 +268,7 @@ Before publishing a release, verify:
 - the frontend handles API errors and expired sessions clearly;
 - no secrets, tokens, or real employee records are committed.
 
-## Security and privacy
+## Security and Privacy
 
 - Keep `.env` files, credentials, JWT signing keys, database passwords, and access tokens out of Git.
 - Use synthetic or anonymized data in development and screenshots.
@@ -256,7 +276,7 @@ Before publishing a release, verify:
 - Do not expose personal employee information in logs, screenshots, or public issues.
 - Follow applicable privacy, employment, and organizational policies before using the platform with real workforce data.
 
-## Current scope and limitations
+## Current Scope and Limitations
 
 OrbitHR is an evolving project. Feature availability and maturity may vary by module. The attrition model is a research prototype and is not a validated employment decision system. Analytics depend on the records and calculations available in the configured database; empty or demo datasets may produce limited results.
 
@@ -284,11 +304,24 @@ Contributions and feedback are welcome. For changes:
 
 ## License
 
-No license is specified here. Add a `LICENSE` file before presenting the repository as open source, and choose a license that matches your intended terms.
+**All rights reserved.**
+
+Copyright (c) 2026 Vishal J.
+
+This project is provided for viewing and evaluation purposes only. You may not copy, modify, redistribute, publish, or use this project's source code, design, or other materials without prior written permission from the author, except where applicable law permits otherwise.
+
+To request permission, contact the repository owner through [GitHub](https://github.com/vxhll).
+
+No license is granted to use, copy, modify, or distribute this project unless the author gives explicit written permission.
 
 ---
 
-<p align="center">
-  <strong>OrbitHR — AI-Native HR Platform</strong><br>
-  Workforce operations and people intelligence, designed with responsible AI and human review in mind.
-</p>
+<div align="center">
+
+**OrbitHR · AI-Native HR Platform**
+
+*Workforce operations and people intelligence, designed with responsible AI and human review in mind.*
+
+[Back to top](#orbithr)
+
+</div>
